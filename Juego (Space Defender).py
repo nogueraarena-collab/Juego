@@ -100,6 +100,7 @@ def show_game_over(score, level, kills):
         btn = pygame.Rect(WIDTH//2 - 100, HEIGHT//2 + 60, 200, 50)
         pygame.draw.rect(SCREEN, CYAN, btn, border_radius=10)
         draw_text("REINTENTAR", FONT_M, BG_DARK, WIDTH//2, HEIGHT//2 + 85, True)
+        draw_text("(Haz clic para volver al inicio)", FONT_S, WHITE, WIDTH//2, HEIGHT//2 + 140, True)
 
         pygame.display.flip()
         for e in pygame.event.get():
@@ -191,13 +192,17 @@ def game():
 def main_menu():
     while True:
         SCREEN.fill(BG_DARK)
-        draw_glass_panel((WIDTH//2 - 250, 150, 500, 350))
+        draw_glass_panel((WIDTH//2 - 250, 150, 500, 380))
         draw_text("SPACE DEFENDER", FONT_L, WHITE, WIDTH//2, 220, True)
         draw_text("¡DEFENSA GALÁCTICA!", FONT_M, CYAN, WIDTH//2, 280, True)
         
-        btn = pygame.Rect(WIDTH//2 - 100, 380, 200, 60)
+        # Instrucciones de controles
+        draw_text("Controles: Flechas / A-D para mover", FONT_S, WHITE, WIDTH//2, 330, True)
+        draw_text("Espacio para disparar", FONT_S, WHITE, WIDTH//2, 355, True)
+        
+        btn = pygame.Rect(WIDTH//2 - 100, 400, 200, 60)
         pygame.draw.rect(SCREEN, CYAN, btn, border_radius=15)
-        draw_text("INICIAR", FONT_M, BG_DARK, WIDTH//2, 410, True)
+        draw_text("INICIAR", FONT_M, BG_DARK, WIDTH//2, 430, True)
 
         pygame.display.flip()
         for e in pygame.event.get():
