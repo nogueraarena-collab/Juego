@@ -1,4 +1,4 @@
-# README - Space Defender: Ultra Strike
+# README - Space Defender Ultra Strike
 
 ## 1. DESCRIPCIÓN GENERAL
 Space Defender es un videojuego de acción arcade donde el jugador toma el control de una nave defensora. Aquí el objetivo es interceptar y destruir las naces enemigas antes de que logren traspasar la línea de defensa o colisionen con el jugador. El juego cuenta con una estética moderna de neón y una dificultad progresiva.
@@ -40,4 +40,5 @@ El proyecto cumple con los parámetros solicitados:
 ## 5. CÓMO EJECUTAR
 1. Instalar Python.
 2. Instalar la librería requerida: `pip install pygame`.
+
 3. Ejecutar el script: `python space_defender.py`
